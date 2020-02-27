@@ -1,0 +1,34 @@
+set incsearch
+set ignorecase
+set smartcase
+
+" ========================= Cursor =========================
+i jj <ESC>
+
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" ========================= Productivity =========================
+nnoremap r :xcmenucmd Show Document Items<CR>
+nnoremap R :xcmenucmd Find Selected Symbol in Workspace<CR>
+" nnoremap <BS> :xcmenucmd Toggle Comments<CR>
+
+" ========================= Editor =========================
+nnoremap gt :xccmd selectNextTab<CR>
+nnoremap gT :xccmd selectPreviousTab<CR>
+nnoremap q :xcmenucmd Close Editor<CR>
+
+" ========================= Area =========================
+nnoremap ,b :xccmd toggleNavigatorsVisibility<CR>
+nnoremap ,d :xccmd toggleDebuggerVisibility<CR>
+nnoremap ,t :xccmd toggleTabBar<CR>
+nnoremap ,tb :xcmenucmd Show Toolbar<CR>
+nnoremap ,i :xcmenucmd Show Inspectors<CR>
+nnoremap ,a :xcmenucmd Show Code Actions<CR>
+vnoremap ,a :xcmenucmd Show Code Actions<CR>
+nnoremap ,r :xcmenucmd Rename<CR>
+
+" ========================= Functionality =========================
+nnoremap ,sv :source ~/.xvimrc<CR>
